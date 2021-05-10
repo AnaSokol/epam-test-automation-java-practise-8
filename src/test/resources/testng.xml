@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- *************************************************************** -->
+<!-- This suite is used to specify the location of the STUDENT tests -->
+<!-- This file is required. If StudentSuite is empty then student    -->
+<!-- tests will not be executed.                                     -->
+<!-- *************************************************************** -->
+
+<suite name="StudentSuite" time-out="10000" verbose="1">
+    <test name="StudentSuite">
+        <classes>
+            <class name="com.epam.test.automation.java.practice8.BaseDepositTest"/>
+            <class name="com.epam.test.automation.java.practice8.ClientTest"/>
+            <class name="com.epam.test.automation.java.practice8.DepositTest"/>
+            <class name="com.epam.test.automation.java.practice8.LongDepositTest"/>
+            <class name="com.epam.test.automation.java.practice8.SpecialDepositTest"/>
+        </classes>
+    </test>
+</suite>
