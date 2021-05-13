@@ -29,9 +29,7 @@ public class SpecialDeposit extends Deposit implements Prolongable {
 
     public boolean canToProlong() {
         BigDecimal minToProlong = new BigDecimal("1000");
-        if (amount.compareTo(minToProlong) > 0) {
-            return true;
-        }
+        if (amount.compareTo(minToProlong) > 0) return true;
         return false;
     }
 }
