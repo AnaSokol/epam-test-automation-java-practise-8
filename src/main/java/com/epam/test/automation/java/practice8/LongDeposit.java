@@ -36,9 +36,7 @@ public class LongDeposit extends Deposit implements Prolongable {
 
     @Override
     public boolean canToProlong() {
-        if (period < 36){
-            return true;
-        }
+       if (period < 36) return true;
         return false;
     }
 }
