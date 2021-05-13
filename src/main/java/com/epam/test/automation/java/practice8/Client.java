@@ -55,14 +55,14 @@ public class Client implements Iterable<Deposit>{
     }
 
     public int countPossibleToProlongDeposit(){
-        int count = 0;
+        int n = 0;
         for (Deposit deposit: deposits){
             if (deposit instanceof SpecialDeposit || deposit instanceof LongDeposit){
                 if (((Prolongable) deposit).canToProlong()){
-                    count++;
+                    n++;
                 }
             }
         }
-        return count;
+        return n;
     }
 }
